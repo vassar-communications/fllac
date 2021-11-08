@@ -1,0 +1,50 @@
+
+.row-tiles {
+  .card {
+    .card-img {
+        transition: 0.3s all ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        object-position: center;
+    }
+  }
+  .card-img-container {
+    height: 1px;
+    position: relative;
+  }
+  &-landscape {
+    .card-img-container {
+      padding-bottom: 56.25%;
+    }
+  }
+  &-portrait {
+    .card-img-container {
+      padding-bottom: 120%;
+    }
+  }
+}
+
+
+//  Override for Exhibits page
+
+.alias--fllac-working-exhibitions,
+.alias--fllac-exhibitions {
+  .current-exhibits {
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .col {
+      max-width: none;
+    }
+    .card-img-container {
+      padding-bottom: 126.25%;
+    }
+    .card-title-lg {
+        font-size: 1.4rem !important;
+        line-height: 1.2;
+    }    
+  }
+}

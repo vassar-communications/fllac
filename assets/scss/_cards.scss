@@ -1,0 +1,100 @@
+/*	Card styling
+	============ */
+
+.text-light-gray {
+  color: #aaa !important;
+}
+
+.card-body.text-white.bg-dark a:hover {
+    background: transparent !important;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+}
+.card .card-body {
+  margin-top: -4em;
+  z-index: 4;
+}
+.card .card-img {
+  transition: 0.3s all ease;
+}
+.card:hover .card-img {
+  transform: scale(1.06);
+}
+
+.card-img-overlay {
+  justify-content: flex-end;
+  flex-flow: column;
+}
+.card-img-overlay * {
+  color: #fff;
+}
+.card-img-overlay .card-title,
+.card-img-overlay .card-text {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s all ease;
+}
+.card-img-overlay:hover .card-title,
+.card-img-overlay:hover .card-text {
+  transform: translateY(0.4rem);
+  opacity: 0;
+}
+.card-img-overlay .card-link {
+  margin: 0;
+}
+.card-img-overlay .stretched-link {
+  text-decoration: none;
+}
+.card-img-overlay .stretched-link:after {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.3s all ease;
+}
+.card-img-overlay .stretched-link:hover *, .card-img-overlay .stretched-link:hover:after {
+  opacity: 0;
+}
+
+
+.card-body * {
+  transition: 0.3s all ease;
+}
+.card-profile:hover .card-body * {
+  color: #fff;
+}
+
+.text-condensed {
+  line-height: 1.4 !important;
+}
+.text-condensed.card-text {
+  display: block;
+}
+
+.card-profile .card-body {
+  transition: 0.3s all ease;
+}
+
+.card-profile:hover .card-body {
+  background: #151515 !important;
+}
+
+.card-profile:hover img {
+  filter: brightness(1.2);
+}
+
+/* Vassar theme overrides */
+.card-profile a:hover {
+  background: none !important;
+  color: #fff !important;
+}
+
+h3.h6.card-title {
+  margin: 0 0 0.4em 0;
+  padding: 0;
+  color: #fff;
+}
