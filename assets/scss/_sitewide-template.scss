@@ -1,0 +1,96 @@
+.main-col.pb-3 {
+    padding-bottom: 0 !important;
+}
+section#footer-nav-info {
+    border: none !important;
+}
+
+
+footer.default.site-footer {
+    display: none;
+}
+
+/*  Footer
+    ====== */
+
+.sitewide-footer {
+
+}
+
+.footer-contents {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.off-the-wall {
+    border: 0.6rem solid #fff;
+    background: #fff;
+    box-shadow: 0.4em 0.4em 0.4em #000;
+}
+
+
+/*	SOCIAL ICONS
+	============ */
+
+.social-icons {
+	svg {
+		width: 3rem;
+	}
+	a.icon-link {
+		path,
+		rect {
+			transition: 0.4s all ease;
+		}
+	}
+	li {
+		a.icon-link:link:hover,
+		a.icon-link:link:focus {
+		    background: transparent !important;
+		}
+	}
+	.icon-container–ig {
+		rect {
+			fill: transparent;
+		}
+		path {
+			fill: #fff;
+		}
+		a.icon-link:hover,
+		a.icon-link:focus {
+			path {
+				fill: #888;
+			}
+		}
+	}
+
+
+	.icon-container–fb {
+		.path--f {
+			fill: #fff;
+		}
+		.path--f-bg {
+			fill: #444;
+		}
+		a:hover {
+			.path--f {
+				fill: #222;
+			}
+			.path--f-bg {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+.icon-container–yt {
+  path[fill="#E52D27"] {
+    fill: #444;
+  }
+  &:hover {
+    path[fill="#E52D27"] {
+      fill: #eee;
+    }
+    path[fill="#fff"] {
+      fill: #333;
+    }
+  }
+}

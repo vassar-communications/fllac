@@ -1,0 +1,92 @@
+/*	Masthead
+	======== */
+
+.fllac-masthead {
+    padding: 1em;
+    max-width: none;
+    z-index: 10;
+    background: rgba(0,0,0,0.8);
+    left: 1.6em;
+	backdrop-filter: blur(20px);
+
+	@media (min-width: 62rem) {
+		position: absolute;
+		clip-path: inset(0 calc(100% - 16em) 0 0);
+	}
+
+	.animated-masthead {
+		background-image: url(https://www.vassar.edu/sites/default/files/2021-08/fllac-logo.png);
+		background-size: 5rem;
+		min-height: 5rem;
+		background-repeat: no-repeat;
+
+		@media (min-width: 62rem) {
+			background-size: contain;
+		}
+	}
+
+	transition: $transition-med;
+
+	.content {
+		max-width: none;
+		padding: 0 !important;
+	}
+
+	&:hover {
+		clip-path: inset(0 0 0 0);
+	}
+
+  .loeb-indent {
+    letter-spacing: -0.034em;
+    margin-left: 0.4rem;
+  }
+
+	.animated-masthead__link {
+		color: #aaa !important;
+		display: block;
+		margin: 0;
+		font-size: 2rem;
+		line-height: 0.86;
+		font-variation-settings: "wght" 200;
+		text-transform: uppercase;
+		text-decoration: none;
+    padding-left: 7rem;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: none !important;
+		}
+		@media (min-width: 62rem) {
+			font-size: 3rem;
+		}
+	}
+	span {
+		transition: $transition-med;
+		transition-property: font-variation-settings, opacity;
+	}
+	.bold-on-hover {
+		font-variation-settings: "wght" 200;
+	}
+	@media (min-width: 62rem) {
+		.show-on-hover {
+			opacity: 0;
+		}
+	}
+	&:hover {
+		.bold-on-hover {
+			font-variation-settings: "wght" 900;
+			color: #fff;
+		}
+		.show-on-hover {
+			color: #999;
+			opacity: 1;
+		}
+	}
+
+
+}
+
+.field--name-field-hero-image-display-title {
+    display: none;
+}

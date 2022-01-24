@@ -1,0 +1,17 @@
+$gap-1: 0.4rem;
+$gap-2: 1rem;
+
+.col-gap-1 {
+  grid-column-gap: $gap-1;
+}
+.col-gap-2 {
+  grid-column-gap: $gap-2;
+}
+
+
+@media (min-width: 48rem) {
+  .grid-cols-md-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

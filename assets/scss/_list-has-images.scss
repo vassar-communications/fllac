@@ -1,0 +1,10 @@
+.has-images {
+  li {
+    display: flex;
+  }
+  img {
+    float: left;
+    width: 30%;
+    margin-right: 1rem;
+  }
+}

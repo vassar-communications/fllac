@@ -55,61 +55,6 @@ $hide-admin-junk: false;
 }
 
 
-/*	SOCIAL ICONS
-	============ */
-
-.social-icons {
-	svg {
-		width: 3rem;
-	}
-	a.icon-link {
-		path,
-		rect {
-			transition: 0.4s all ease;
-		}
-	}
-	li {
-		a.icon-link:link:hover,
-		a.icon-link:link:focus {
-		    background: transparent !important;
-		}
-	}
-	.icon-container–ig {
-		rect {
-			fill: transparent;
-		}
-		path {
-			fill: #fff;
-		}
-		a.icon-link:hover,
-		a.icon-link:focus {
-			path {
-				fill: #f00;
-			}
-		}
-	}
-
-
-	.icon-container–fb {
-		.path--f {
-			fill: #fff;
-		}
-		.path--f-bg {
-			fill: #444;
-		}
-		a:hover {
-			.path--f {
-				fill: #222;
-			}
-			.path--f-bg {
-				fill: #fff;
-			}
-		}
-	}
-}
-
-
-
 /*	TICKER
 	====== */
 
@@ -327,13 +272,14 @@ h1, .component--main-content .content h1.main-content-display-title, .component-
     }
 }
 
+/*
 @supports (backdrop-filter: blur()) {
 	.dark-shim-blurred {
 		background: rgba(0,0,0,0.7);
 		backdrop-filter: blur(40px);
 	}
 }
-
+*/
 
 .space-below-row-title {
 	.main-content-display-title {
@@ -435,94 +381,6 @@ h2 {
 
 
 
-/*	Masthead
-	======== */
-
-.fllac-masthead {
-    padding: 1em;
-    max-width: none;
-    z-index: 10;
-    background: rgba(0,0,0,0.8);
-    left: 1.6em;
-	backdrop-filter: blur(20px);
-
-	@media (min-width: 62rem) {
-		position: absolute;
-		clip-path: inset(0 calc(100% - 16em) 0 0);
-	}
-
-	.animated-masthead {
-		background-image: url(https://www.vassar.edu/sites/default/files/2021-08/fllac-logo.png);
-		background-size: 5rem;
-		min-height: 5rem;
-		background-repeat: no-repeat;
-		padding-left: 7rem;
-
-		@media (min-width: 62rem) {
-			background-size: contain;
-		}
-	}
-
-	transition: $transition-med;
-
-	.content {
-		max-width: none;
-		padding: 0 !important;
-	}
-
-	&:hover {
-		clip-path: inset(0 0 0 0);
-	}
-
-
-	.animated-masthead__link {
-		color: #aaa !important;
-		display: block;
-		margin: 0;
-		font-size: 2rem;
-		line-height: 0.86;
-		font-variation-settings: "wght" 200;
-		text-transform: uppercase;
-		text-decoration: none;
-
-		&:hover,
-		&:focus,
-		&:active {
-			background: none !important;
-		}
-		@media (min-width: 62rem) {
-			font-size: 3rem;
-		}
-	}
-	span {
-		transition: $transition-med;
-		transition-property: font-variation-settings, opacity;
-	}
-	.bold-on-hover {
-		font-variation-settings: "wght" 200;
-	}
-	@media (min-width: 62rem) {
-		.show-on-hover {
-			opacity: 0;
-		}
-	}
-	&:hover {
-		.bold-on-hover {
-			font-variation-settings: "wght" 900;
-			color: #fff;
-		}
-		.show-on-hover {
-			color: #999;
-			opacity: 1;
-		}
-	}
-
-
-}
-
-.field--name-field-hero-image-display-title {
-    display: none;
-}
 
 
 #page > header#header {
@@ -547,8 +405,16 @@ h2 {
 }
 
 
-
+@import "_sitewide-template";
+@import "_off-the-wall";
+@import "_masthead";
+@import "_link--card-hover";
+@import "_list-has-images";
 @import "_cards";
+@import "_intro-text";
+@import "_grid";
 @import "_hp-exhibits";
+@import "_exhibitions-gallery";
 @import "_colors";
 @import "_featured-video";
+@import "_news-listing-overrides.scss";

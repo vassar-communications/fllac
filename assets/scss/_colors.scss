@@ -1,3 +1,42 @@
+
+/*  These are utility classes intended to be
+    used for constructing hover effects for links
+    that are placed on different colored backgrounds
+*/
+
+.bg-dark-charcoal {
+  background: #222;
+}
 .bg-black {
   background: #000;
+}
+
+.border-gray-to-white {
+  border-color: #aaa;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: #fff;
+  }
+}
+
+.bg-transparent-to-light {
+  background-color: transparent;
+
+  &:focus,
+  &:hover,
+  &:active {
+    //  resetting the --burgundy-light var is a workaround for
+    //  a weird bug I noticed where the background color was
+    //  taking on the burgundy color with the opacity specified
+    //  in the background-color rule below.
+    --burgundy-light: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.3);
+  }
+}
+
+
+.btn.btn-white.border-gray-to-white.bg-transparent-to-light {
+    color: #ccc;
 }

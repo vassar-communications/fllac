@@ -1,0 +1,35 @@
+/*  On Exhibitions, I'm using the markup for the news listing. This
+    primarily uses central styling, but there are a few FLLAC-specific
+    things I need here.
+
+    This mainly crops images to square thumbnails.
+*/
+
+
+.rendered-news-view {
+  @media (max-width: 48rem) {
+    article {
+      .info {
+        flex: 1;
+      }
+    }
+    .node--news--teaser .node__content {
+      display: flex;
+    }
+    .field--name-field-news-teaser-image-square {
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1rem;
+    }
+  }
+
+//  @media (min-width: 48rem) {
+    .image-style-news-square-large {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+//  }
+}

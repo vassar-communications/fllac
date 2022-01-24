@@ -1,0 +1,16 @@
+.main-content-container {
+  a:not(.btn).hover-style-card {
+    border-top: 1px solid #fff;
+    display: block;
+    padding: 0.4em;
+    transition-duration: 0.3s;
+    width: 100%;
+  }
+  a:not(.btn).hover-style-card:hover {
+    background: #fff !important;
+    border-top-color: #f00;
+    color: #f00 !important;
+    transform: scale(1.1);
+    box-shadow: 0 0.3em 0.3em rgb(0 0 0 / 20%);
+  }
+}
