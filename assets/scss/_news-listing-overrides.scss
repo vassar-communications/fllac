@@ -15,12 +15,15 @@
     }
     .node--news--teaser .node__content {
       display: flex;
+
+      display: block;
     }
     .field--name-field-news-teaser-image-square {
         position: relative;
         width: 8rem;
         height: 8rem;
         margin-right: 1rem;
+        margin-bottom: 1rem !important;
     }
   }
 

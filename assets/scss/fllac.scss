@@ -310,14 +310,14 @@ h1, .component--main-content .content h1.main-content-display-title, .component-
 
 .component--secondary-navigation a,
 .component--secondary-navigation a:visited {
-	color: var(--red);
+	color: var(--vassar-red);
 	font-weight: bold;
     padding-top: 1em;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background: var(--red) !important;
+		background: var(--vassar-red) !important;
 		color: var(--fllac-gray-cool-light) !important;
 	}
 

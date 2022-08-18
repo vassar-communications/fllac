@@ -220,7 +220,7 @@ h1, .component--main-content .content h1.main-content-display-title, .component-
 	--- */
 .component--secondary-navigation a,
 .component--secondary-navigation a:visited {
-  color: var(--red);
+  color: var(--vassar-red);
   font-weight: bold;
   padding-top: 1em;
 }
@@ -228,7 +228,7 @@ h1, .component--main-content .content h1.main-content-display-title, .component-
 .component--secondary-navigation a:visited:hover,
 .component--secondary-navigation a:visited:focus,
 .component--secondary-navigation a:visited:active {
-  background: var(--red) !important;
+  background: var(--vassar-red) !important;
   color: var(--fllac-gray-cool-light) !important;
 }
 
@@ -322,9 +322,7 @@ footer.default.site-footer {
 }
 
 .off-the-wall {
-  border: 0.6rem solid #fff;
-  background: #fff;
-  box-shadow: 0.4em 0.4em 0.4em #000;
+  margin: 0 1rem 1rem;
 }
 
 /*	SOCIAL ICONS
@@ -468,7 +466,8 @@ footer.default.site-footer {
   transition-duration: 0.3s;
   width: 100%;
 }
-.main-content-container a:not(.btn).hover-style-card:hover {
+.main-content-container a:not(.btn).hover-style-card:hover,
+.main-content-container a:not(.btn).hover-style-card:focus {
   background: #fff !important;
   border-top-color: #f00;
   color: #f00 !important;
@@ -608,8 +607,8 @@ h3.h6.card-title {
 }
 
 .intro-text {
+  font-weight: 400;
   letter-spacing: 0.01em !important;
-  color: #222;
 }
 
 .col-gap-1 {
@@ -955,12 +954,14 @@ https://flickity.metafizzy.co
   }
   .rendered-news-view .node--news--teaser .node__content {
     display: flex;
+    display: block;
   }
   .rendered-news-view .field--name-field-news-teaser-image-square {
     position: relative;
     width: 8rem;
     height: 8rem;
     margin-right: 1rem;
+    margin-bottom: 1rem !important;
   }
 }
 .rendered-news-view .image-style-news-square-large {

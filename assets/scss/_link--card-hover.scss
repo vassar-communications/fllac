@@ -6,7 +6,8 @@
     transition-duration: 0.3s;
     width: 100%;
   }
-  a:not(.btn).hover-style-card:hover {
+  a:not(.btn).hover-style-card:hover,
+  a:not(.btn).hover-style-card:focus {
     background: #fff !important;
     border-top-color: #f00;
     color: #f00 !important;
