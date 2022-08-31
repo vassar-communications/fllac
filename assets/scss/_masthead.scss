@@ -19,6 +19,7 @@
 		background-size: 5rem;
 		min-height: 5rem;
 		background-repeat: no-repeat;
+    font-family: 'din-2014', sans-serif;
 
 		@media (min-width: 62rem) {
 			background-size: contain;
@@ -37,8 +38,11 @@
 	}
 
   .loeb-indent {
-    letter-spacing: -0.034em;
+//    letter-spacing: -0.034em;
     margin-left: 0.4rem;
+  }
+  .bold-on-hover:not(.loeb-indent) {
+      letter-spacing: 1px;
   }
 
 	.animated-masthead__link {
@@ -66,7 +70,9 @@
 		transition-property: font-variation-settings, opacity;
 	}
 	.bold-on-hover {
-		font-variation-settings: "wght" 200;
+//		font-variation-settings: "wght" 200;
+		transition: $transition-med;
+    transition-property: color;
 	}
 	@media (min-width: 62rem) {
 		.show-on-hover {
@@ -75,11 +81,12 @@
 	}
 	&:hover {
 		.bold-on-hover {
-			font-variation-settings: "wght" 900;
+//			font-variation-settings: "wght" 900;
 			color: #fff;
 		}
 		.show-on-hover {
-			color: #999;
+//			color: #999;
+      color: #fff;
 			opacity: 1;
 		}
 	}

@@ -398,6 +398,7 @@ footer.default.site-footer {
   background-size: 5rem;
   min-height: 5rem;
   background-repeat: no-repeat;
+  font-family: "din-2014", sans-serif;
 }
 @media (min-width: 62rem) {
   .fllac-masthead .animated-masthead {
@@ -412,8 +413,10 @@ footer.default.site-footer {
   clip-path: inset(0 0 0 0);
 }
 .fllac-masthead .loeb-indent {
-  letter-spacing: -0.034em;
   margin-left: 0.4rem;
+}
+.fllac-masthead .bold-on-hover:not(.loeb-indent) {
+  letter-spacing: 1px;
 }
 .fllac-masthead .animated-masthead__link {
   color: #aaa !important;
@@ -439,7 +442,8 @@ footer.default.site-footer {
   transition-property: font-variation-settings, opacity;
 }
 .fllac-masthead .bold-on-hover {
-  font-variation-settings: "wght" 200;
+  transition: 0.4s all ease;
+  transition-property: color;
 }
 @media (min-width: 62rem) {
   .fllac-masthead .show-on-hover {
@@ -447,11 +451,10 @@ footer.default.site-footer {
   }
 }
 .fllac-masthead:hover .bold-on-hover {
-  font-variation-settings: "wght" 900;
   color: #fff;
 }
 .fllac-masthead:hover .show-on-hover {
-  color: #999;
+  color: #fff;
   opacity: 1;
 }
 
